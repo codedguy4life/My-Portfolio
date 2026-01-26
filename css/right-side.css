@@ -1,0 +1,43 @@
+.right-side {
+  background-color: rgba(255, 255, 255, 0.1); /* semi-transparent for effect */
+  backdrop-filter: blur(5px);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-me {
+  max-width: 600px;  
+}
+
+.about-me h2 {
+  margin-bottom: 10px;
+  font-size: 50px;
+  line-height: 0.5;
+}
+
+.about-me p {
+  font-size: 16px;
+  padding: 10px 0; 
+  color: rgb(70, 69, 69);
+  width: 250px;
+}
+
+.background-box {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+}
+.background-box img {
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+  width: 900px; /* adjust as you like */
+  z-index: 10;  /* makes sure it's on top */
+  transform: translate(-550px, 170px) scaleX(-1);
+  pointer-events: none; 
+  filter: grayscale(1.0);
+   transition: transform 0.3s ease;
+}
