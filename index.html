@@ -1,97 +1,225 @@
-</div>
-</div>
-<h1 class="profile-name">Sodiq Olamide</h1>
-        <p class="profile-title">Web Developer</p>
-       <p class="profile-title">Full-Stack Web Developer</p>
-<p class="profile-location">Nigeria 🇳🇬</p>
-</div>
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sodiq Olamide | Full-Stack Web Developer</title>
 
-@@ -745,11 +745,11 @@ <h1 class="profile-name">Sodiq Olamide</h1>
-<div class="hero-section" id="home">
-<div class="hero-content">
-<p class="hero-greeting">Hey there! 👋</p>
-          <h2 class="hero-title">I Build Websites</h2>
-          <p class="hero-description">
-            I'm a web developer who loves creating clean, modern websites that actually work. 
-            Based in Nigeria, turning ideas into reality one line of code at a time.
-          </p>
-         <h2 class="hero-title">I Build Real Web Solutions</h2>
-<p class="hero-description">
-  I design and build clean, modern websites and web apps that actually work in real life. 
-  From frontend to backend, I focus on making things simple, fast, and reliable.
-</p>
-<button class="hero-cta" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
-Let's Talk
-</button>
-@@ -760,37 +760,47 @@ <h2 class="hero-title">I Build Websites</h2>
-<section id="about">
-<h3 class="section-title">About Me</h3>
-<div class="section-content">
-          <p>I'm Sodiq Olamide, a web developer passionate about crafting beautiful, functional websites. I believe good design should be accessible to everyone, not just big companies.</p>
-          <p>When I'm not coding, you'll find me exploring new web technologies, learning design trends, or helping others get started with web development.</p>
-        <p>I'm Sodiq Olamide, a full-stack web developer who enjoys building practical and user-friendly web applications.</p>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<p>I focus on creating websites that are not just good-looking, but also fast, responsive, and reliable. I'm constantly learning and improving my skills to build better solutions.</p>
-</div>
-</section>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<section id="skills">
-<h3 class="section-title">What I Work With</h3>
-        <div class="skills-grid">
-          <div class="skill-item">HTML5</div>
-          <div class="skill-item">CSS3</div>
-          <div class="skill-item">JavaScript</div>
-          <div class="skill-item">Bootstrap</div>
-          <div class="skill-item">Responsive Design</div>
-          <div class="skill-item">Git & GitHub</div>
-          <div class="skill-item">Tailwind CSS</div>
-          <div class="skill-item">Node.JS</div>
-          <div class="skill-item">Express.JS</div>
-           <div class="skill-item">REST APIs</div>
-          <div class="skill-item">Responsive Design</div>
-          <div class="skill-item">Postman</div>
-        </div>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: #0a0a0a;
+      color: #fff;
+    }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      width: 280px;
+      background: #111;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile-name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .profile-title {
+      color: #818cf8;
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .social-link {
+      width: 40px;
+      height: 40px;
+      background: #1a1a1a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+    }
+
+    .social-link i {
+      color: #aaa;
+    }
+
+    .social-link:hover i {
+      color: white;
+    }
+
+    /* MAIN */
+    .main {
+      flex: 1;
+      padding: 40px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    /* SKILLS */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 10px;
+    }
+
+    .skill-item {
+      background: #1a1a1a;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    /* CONTACT */
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 10px 0;
+      color: #aaa;
+      text-decoration: none;
+    }
+
+    .contact-item i {
+      color: #818cf8;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <h1 class="profile-name">Sodiq Olamide</h1>
+    <p class="profile-title">Full-Stack Web Developer</p>
+
+    <div class="social-links">
+      <a href="mailto:olasodiq27@gmail.com" class="social-link">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.facebook.com/share/1GUYrP6tBw/" class="social-link">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/obago4real" class="social-link">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://github.com/codedguy4life" class="social-link">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main">
+
+    <!-- HERO -->
+    <section>
+      <h2>I Build Real Web Solutions</h2>
+      <p>
+        I design and build clean, modern websites and web apps that actually work in real life.
+        From frontend to backend, I focus on making things simple, fast, and reliable.
+      </p>
+    </section>
+
+    <!-- ABOUT -->
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I'm Sodiq Olamide, a full-stack web developer who enjoys building practical and user-friendly web applications.
+      </p>
+      <p>
+        I focus on creating websites that are fast, responsive, and reliable while constantly improving my skills.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+      <h2>What I Work With</h2>
       <div class="skills-grid">
-  <div class="skill-item">HTML5</div>
-  <div class="skill-item">CSS3</div>
-  <div class="skill-item">JavaScript</div>
-  <div class="skill-item">Bootstrap</div>
-  <div class="skill-item">Tailwind CSS</div>
-  <div class="skill-item">Node.js</div>
-  <div class="skill-item">Express.js</div>
-  <div class="skill-item">MongoDB</div>
-  <div class="skill-item">REST APIs</div>
-  <div class="skill-item">Git</div>
-  <div class="skill-item">GitHub</div>
-  <div class="skill-item">Postman</div>
-  <div class="skill-item">Responsive Design</div>
-</div>
-</section>
+        <div class="skill-item">HTML5</div>
+        <div class="skill-item">CSS3</div>
+        <div class="skill-item">JavaScript</div>
+        <div class="skill-item">Bootstrap</div>
+        <div class="skill-item">Tailwind CSS</div>
+        <div class="skill-item">Node.js</div>
+        <div class="skill-item">Express.js</div>
+        <div class="skill-item">MongoDB</div>
+        <div class="skill-item">REST APIs</div>
+        <div class="skill-item">Git</div>
+        <div class="skill-item">GitHub</div>
+        <div class="skill-item">Postman</div>
+        <div class="skill-item">Responsive Design</div>
+      </div>
+    </section>
 
-      <section id="services">
-        <h3 class="section-title">What I Do</h3>
-        <div class="section-content">
-          <p><strong>Web Design</strong> – Creating beautiful, user-friendly interfaces that people actually enjoy using.</p>
-          <p><strong>Frontend Development</strong> – Building responsive websites that work perfectly on any device.</p>
-          <p><strong>Website Optimization</strong> – Making sure your site loads fast and looks great everywhere.</p>
-        </div>
-      </section>
-    <section id="services">
-  <h3 class="section-title">What I Do</h3>
-  <div class="section-content">
-    
-    <p><strong>Web Design</strong> – I create clean and simple designs that are easy to use.</p>
+    <!-- SERVICES -->
+    <section>
+      <h2>What I Do</h2>
 
-    <p><strong>Frontend Development</strong> – I build responsive websites that work smoothly on phones, tablets, and desktops.</p>
+      <p><strong>Web Design</strong> – Clean and simple designs.</p>
+      <p><strong>Frontend Development</strong> – Responsive websites.</p>
+      <p><strong>Backend Development</strong> – APIs and server logic.</p>
+      <p><strong>API Integration</strong> – Connecting real services.</p>
+      <p><strong>Performance Optimization</strong> – Fast and smooth apps.</p>
+    </section>
 
-    <p><strong>Backend Development</strong> – I handle server-side logic, build APIs, and manage data using Node.js and Express.</p>
+    <!-- CONTACT -->
+    <section>
+      <h2>Get In Touch</h2>
 
-    <p><strong>API Integration</strong> – I connect websites to real services like payments, authentication, and external data.</p>
+      <a href="mailto:olasodiq27@gmail.com" class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <span>Email Me</span>
+      </a>
 
-    <p><strong>Performance Optimization</strong> – I make sure websites load fast and run efficiently.</p>
+      <a href="https://github.com/codedguy4life" class="contact-item">
+        <i class="fab fa-github"></i>
+        <span>GitHub</span>
+      </a>
+
+      <a href="https://www.instagram.com/obago4real" class="contact-item">
+        <i class="fab fa-instagram"></i>
+        <span>Instagram</span>
+      </a>
+
+    </section>
 
   </div>
-</section>
 
-<section id="work">
-<h3 class="section-title">My Work</h3>
+</div>
+
+</body>
+</html>
