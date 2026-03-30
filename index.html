@@ -1,240 +1,117 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sodiq Olamide | Web Developer</title>
 
-<title>Sodiq Olamide | Full-Stack Developer</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- ✅ ADDED (for real tech icons) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
-<!-- Devicon -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+      margin: 0;
+      background: #0a0a0a;
+      color: #fff;
+    }
 
-<style>
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 10px;
+    }
 
-/* === YOUR ORIGINAL STYLES (UNCHANGED CORE) === */
-body {
-  margin:0;
-  font-family: 'Outfit', sans-serif;
-  background:#0a0a0a;
-  color:#fff;
-}
+    /* ✅ UPDATED skill-item ONLY */
+    .skill-item {
+      background: #1a1a1a;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
 
-.container{
-  display:flex;
-}
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
 
-/* SIDEBAR */
-.sidebar{
-  width:280px;
-  background:#111;
-  padding:20px;
-}
-
-.profile-title{
-  color:#818cf8;
-  font-size:12px;
-}
-
-/* SOCIAL ICON FIX */
-.social-link i{
-  font-size:18px;
-  color:#aaa;
-}
-
-/* MAIN */
-.main-content{
-  flex:1;
-  padding:30px;
-}
-
-/* === SKILLS UPDATED === */
-.skills-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
-  gap:10px;
-}
-
-.skill-item{
-  background:#1a1a1a;
-  padding:12px;
-  border-radius:8px;
-  text-align:center;
-
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:6px;
-}
-
-.skill-item i{
-  font-size:26px;
-  transition:0.3s;
-}
-
-.skill-item:hover i{
-  transform:scale(1.2);
-}
-
-/* === PROJECTS UPDATED === */
-.projects-container{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:15px;
-}
-
-.project-card{
-  background:#1a1a1a;
-  padding:15px;
-  border-radius:10px;
-  transition:0.3s;
-}
-
-.project-card:hover{
-  transform:translateY(-5px);
-}
-
-.project-tech{
-  display:flex;
-  gap:8px;
-  margin:10px 0;
-}
-
-.project-tech i{
-  font-size:16px;
-}
-
-/* CONTACT */
-.contact-item{
-  display:flex;
-  gap:10px;
-  margin:10px 0;
-  color:#aaa;
-  text-decoration:none;
-}
-
-</style>
+    .skill-item i {
+      font-size: 20px;
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="container">
-
-<!-- SIDEBAR -->
-<div class="sidebar">
-  <h2>Sodiq Olamide</h2>
-  <p class="profile-title">Full-Stack Developer</p>
-
-  <div>
-    <a href="mailto:olasodiq27@gmail.com" class="social-link">
-      <i class="fas fa-envelope"></i>
-    </a>
-    <a href="https://github.com/codedguy4life" class="social-link">
-      <i class="fab fa-github"></i>
-    </a>
-  </div>
-</div>
-
-<!-- MAIN -->
-<div class="main-content">
-
-<!-- HERO -->
-<section>
-  <h1>I Build Real Web Solutions</h1>
-  <p>Frontend + Backend developer building real systems.</p>
-</section>
-
-<!-- SKILLS -->
-<section>
-  <h2>What I Work With</h2>
+<section id="skills">
+  <h3>What I Work With</h3>
 
   <div class="skills-grid">
 
     <div class="skill-item">
-      <i class="devicon-html5-plain colored"></i>
-      <span>HTML5</span>
+      <i class="devicon-html5-plain colored"></i> HTML5
     </div>
 
     <div class="skill-item">
-      <i class="devicon-css3-plain colored"></i>
-      <span>CSS3</span>
+      <i class="devicon-css3-plain colored"></i> CSS3
     </div>
 
     <div class="skill-item">
-      <i class="devicon-javascript-plain colored"></i>
-      <span>JavaScript</span>
+      <i class="devicon-javascript-plain colored"></i> JavaScript
     </div>
 
     <div class="skill-item">
-      <i class="devicon-nodejs-plain colored"></i>
-      <span>Node.js</span>
+      <i class="devicon-bootstrap-plain colored"></i> Bootstrap
     </div>
 
     <div class="skill-item">
-      <i class="devicon-mongodb-plain colored"></i>
-      <span>MongoDB</span>
+      <i class="devicon-react-original colored"></i> React
     </div>
 
     <div class="skill-item">
-      <i class="devicon-github-original"></i>
-      <span>GitHub</span>
+      <i class="devicon-tailwindcss-plain colored"></i> Tailwind CSS
+    </div>
+
+    <div class="skill-item">
+      <i class="devicon-nodejs-plain colored"></i> Node.js
+    </div>
+
+    <div class="skill-item">
+      <i class="devicon-express-original"></i> Express.js
+    </div>
+
+    <div class="skill-item">
+      <i class="devicon-mongodb-plain colored"></i> MongoDB
+    </div>
+
+    <div class="skill-item">
+      <i class="fas fa-server"></i> REST APIs
+    </div>
+
+    <div class="skill-item">
+      <i class="devicon-git-plain colored"></i> Git
+    </div>
+
+    <div class="skill-item">
+      <i class="devicon-github-original"></i> GitHub
+    </div>
+
+    <div class="skill-item">
+      <i class="devicon-postman-plain colored"></i> Postman
+    </div>
+
+    <div class="skill-item">
+      <i class="fas fa-mobile-alt"></i> Responsive Design
     </div>
 
   </div>
 </section>
-
-<!-- PROJECTS -->
-<section>
-  <h2>My Projects</h2>
-
-  <div class="projects-container">
-
-    <div class="project-card">
-      <h4><i class="fas fa-shield-alt"></i> VerifiedNG</h4>
-      <p>Backend verification system</p>
-
-      <div class="project-tech">
-        <i class="devicon-nodejs-plain colored"></i>
-        <i class="devicon-mongodb-plain colored"></i>
-      </div>
-
-      <a href="https://codedguy4life.github.io/VerifiedNG/" target="_blank">
-        View
-      </a>
-    </div>
-
-    <div class="project-card">
-      <h4><i class="fas fa-cake-candles"></i> Oyincakes</h4>
-      <p>Business website</p>
-
-      <div class="project-tech">
-        <i class="devicon-html5-plain colored"></i>
-        <i class="devicon-css3-plain colored"></i>
-      </div>
-
-      <a href="https://codedguy4life.github.io/Oyincakeandmore/" target="_blank">
-        View
-      </a>
-    </div>
-
-    <div class="project-card">
-      <h4><i class="fas fa-laptop-code"></i> Portfolio</h4>
-      <p>My personal website</p>
-
-      <a href="https://codedguy.name.ng/" target="_blank">
-        Visit
-      </a>
-    </div>
-
-  </div>
-</section>
-
-</div>
-</div>
 
 </body>
 </html>
