@@ -38,6 +38,12 @@ My-Portfolio/
 
 The site is built using static HTML, CSS and JavaScript. The stylesheet and script are loaded from their respective folders; there is no build step.
 
+## Project Screenshots
+
+Every featured project card now uses a screenshot of its public project page rather than an illustrative mockup. Screenshots are requested from [Thum.io](https://www.thum.io/) and, if that service fails, [WordPress mShots](https://s.wordpress.com/mshots/v1/).
+
+The original project-initials artwork remains the fallback if an image cannot load. The screenshot services capture **only publicly accessible pages**; they cannot show a signed-in user's dashboard. These are dynamically fetched previews, not locally stored image files. For production reliability, locally hosted screenshots supplied or captured from the projects can replace these remote previews later.
+
 ## Features
 
 - Responsive layout for desktop and mobile
