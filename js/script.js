@@ -135,3 +135,43 @@ sectionObserver.observe(section);
 
 document.getElementById("year").textContent =
 new Date().getFullYear();
+
+// =========================
+// PROJECT SCREENSHOT PREVIEWS
+// =========================
+// Screenshot services capture the public-facing project pages.
+// Never request or embed a signed-in user's private dashboard.
+document.querySelectorAll(".project-preview").forEach((image) => {
+  const wrapper = image.closest(".project-top");
+  const projectPage = image.closest(".project")?.querySelector(".project-link")?.href;
+
+  const markLoaded = () => {
+    if (image.naturalWidth > 0) {
+      wrapper?.classList.add("has-preview");
+    }
+  };
+
+  const handleFailure = () => {
+    wrapper?.classList.remove("has-preview");
+
+    // A second screenshot provider can capture the public page if
+    // the primary provider is unavailable. Only try it once.
+    if (image.dataset.backupTried !== "true" && projectPage) {
+      image.dataset.backupTried = "true";
+      image.src = `https://s.wordpress.com/mshots/v1/${encodeURIComponent(projectPage)}?w=960`;
+    }
+    // If the second provider fails too, the project's initials remain visible.
+  };
+
+  image.addEventListener("load", markLoaded);
+  image.addEventListener("error", handleFailure);
+
+  // Catch images that finished loading (or failed) before listeners attached.
+  if (image.complete) {
+    if (image.naturalWidth > 0) {
+      markLoaded();
+    } else {
+      handleFailure();
+    }
+  }
+});
